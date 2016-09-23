@@ -3,14 +3,6 @@ package Assignment2;
 import java.util.Arrays;
 import java.util.Scanner;
 
-/**
- * Assignment for your lecture 2. Please finish all the questions under
- * 'Assignment'. Please try the two questions under 'Bonus'. Please write some
- * tests as practice. When you are writing tests, you should think about what
- * situations might cause error? like 0,-1... 
- * 
- */
-
 class Person {
 	int age;
 	boolean gender;// false --> male, true --> female
@@ -51,8 +43,6 @@ public class Assignment2 {
 		
 		}	
 		}
-		
-
 	}
 	
 	/**
@@ -81,7 +71,8 @@ public class Assignment2 {
     	if(person.gender==false){System.out.println("The person is KG Boy");}else{
     		System.out.println("The person is KG Girl");
     	}
-    }}
+    }
+   }
 
 	/**
 	 * Given an integer N as input, check the following: If N is odd, print
