@@ -181,7 +181,6 @@ public class Assignment3 {
 		System.out.println("The message from Mars should be:");
 		message=this.scanner.next();
 		int change=0;
-		String temp="";
 		String []st=new String[message.length()/3];
 		for(int i=0,j=0;i<=message.length()&&i+3<=message.length()&&j<message.length()/3;i+=3,j++){
 			st[j]=message.substring(i, i+3);}
