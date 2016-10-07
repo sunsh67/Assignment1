@@ -14,7 +14,7 @@ import org.junit.Test;
 
 import Assignment3.Assignment3;
 
-/*assertEquals(..,output)*/
+
 public class Assignment3Testing {
 
 	private Assignment3 JUTest=new Assignment3();
