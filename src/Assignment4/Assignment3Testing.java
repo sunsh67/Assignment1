@@ -55,16 +55,8 @@ public class Assignment3Testing {
 	@Test
 	public void testForGeneratePascalsTriangle(){
 		int[][]output=this.JUTest.generatePascalsTriangle(5);
-		int[]result1={0,0,0,0,1,0,0,0,0};
-		int[]result2={0,0,0,1,0,1,0,0,0};
-		int[]result3={0,0,1,0,2,0,1,0,0};
-		int[]result4={0,1,0,3,0,3,0,1,0};
-		int[]result5={1,0,4,0,6,0,4,0,1};
-		assertArrayEquals(output[0],result1);
-		assertArrayEquals(output[1],result2);
-		assertArrayEquals(output[2],result3);
-		assertArrayEquals(output[3],result4);
-		assertArrayEquals(output[4],result5);
+		int[][]result={{0,0,0,0,1,0,0,0,0},{0,0,0,1,0,1,0,0,0},{0,0,1,0,2,0,1,0,0},{0,1,0,3,0,3,0,1,0},{1,0,4,0,6,0,4,0,1}};
+		assertArrayEquals(output,result);
 	}
 	
 	@Test
