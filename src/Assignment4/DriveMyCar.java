@@ -1,10 +1,10 @@
 package Assignment4;
 
-public class driveMyCar {
+public class DriveMyCar {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		 Driver david=new Driver("david","123456");
+		   Driver david=new Driver("david","123456");
 	       david.car=new Car("WA98102","Toyato","Sliver");
 	       david.gasTank=new GasTank();
 	       david.getDriverInformation(david);
