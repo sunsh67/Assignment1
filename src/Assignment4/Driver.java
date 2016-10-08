@@ -23,7 +23,7 @@ public class Driver {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner scanner=new Scanner(System.in);
+	   Scanner scanner=new Scanner(System.in);
        Driver david=new Driver("david","123456");
        david.car=new Car("WA98102","Toyato","Sliver");
        david.gasTank=new GasTank();
@@ -39,7 +39,7 @@ public class Driver {
        System.out.println("please enter miles to drive:");
        double miles=scanner.nextDouble();
        if(miles>david.gasTank.getGasLevel()){
-    	   System.out.println("Sorry, the gas left is only for"+david.gasTank.getGasLevel()+"miles");
+    	   System.out.println("Sorry, the gas left is only for"+david.gasTank.getGasLevel()+" miles");
        }else{
     	   david.drive(miles);
     	   System.out.println(david.getName()+"has drived for "+miles+" miles, now the gas left is "+david.gasTank.getGasLevel());
