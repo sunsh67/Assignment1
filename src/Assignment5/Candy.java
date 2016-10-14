@@ -12,7 +12,14 @@ public class Candy extends DessertItem{
 	@Override
 	public int getCost() {
 		// TODO Auto-generated method stub
-		return (int)(this.pricePerPound*this.weight*100);
+		return (int)(this.pricePerPound*this.weight);
+	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		String info=this.weight+" lbs."+" @ "+this.pricePerPound
+				+" /lb.\n";
+		return info+super.toString();
 	}
 
 	

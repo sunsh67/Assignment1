@@ -12,5 +12,10 @@ public class IceCream extends DessertItem{
 		// TODO Auto-generated method stub
 		return this.cost;
 	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
 
 }

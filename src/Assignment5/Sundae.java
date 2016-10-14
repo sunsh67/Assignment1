@@ -16,5 +16,10 @@ public class Sundae extends IceCream {
 		// TODO Auto-generated method stub
 		return super.getCost()+this.priceOfTopping;
 	}
-
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		String name=super.toString()+"  \n with "+this.topping;
+		return name+"    ";
+	}
 }

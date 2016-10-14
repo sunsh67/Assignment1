@@ -14,12 +14,10 @@ public class TestCheckout {
 		System.out.println("\nTotal cost: " + checkout.totalCost());
 		System.out.println("\nTotal tax: " + checkout.totalTax());
 		System.out.println("\nCost + Tax: " + (checkout.totalCost() + checkout.totalTax()) + "\n");
-		System.out.println(checkout.mm);
-		System.out.println(checkout);
-		
+		checkout.printReceipt();
 		checkout.clear();
 
-		/*checkout.enterItem(new IceCream("Strawberry Ice Cream", 145));
+		checkout.enterItem(new IceCream("Strawberry Ice Cream", 145));
 		checkout.enterItem(new Sundae("Vanilla Ice Cream", 105, "Caramel", 50));
 		checkout.enterItem(new Candy("Gummy Worms", 1.33, 89));
 		checkout.enterItem(new Cookie("Chocolate Chip Cookies", 4, 399));
@@ -30,6 +28,6 @@ public class TestCheckout {
 		System.out.println("\nTotal cost: " + checkout.totalCost() + "\n");
 		System.out.println("\nTotal tax: " + checkout.totalTax() + "\n");
 		System.out.println("\nCost + Tax: " + (checkout.totalCost() + checkout.totalTax()) + "\n");
-		System.out.println(checkout);*/
+		checkout.printReceipt();
 	}
 }
