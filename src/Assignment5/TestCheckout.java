@@ -14,7 +14,7 @@ public class TestCheckout {
 		System.out.println("\nTotal cost: " + checkout.totalCost());
 		System.out.println("\nTotal tax: " + checkout.totalTax());
 		System.out.println("\nCost + Tax: " + (checkout.totalCost() + checkout.totalTax()) + "\n");
-		checkout.printReceipt();
+		System.out.println(checkout);
 		checkout.clear();
 
 		checkout.enterItem(new IceCream("Strawberry Ice Cream", 145));
@@ -28,6 +28,6 @@ public class TestCheckout {
 		System.out.println("\nTotal cost: " + checkout.totalCost() + "\n");
 		System.out.println("\nTotal tax: " + checkout.totalTax() + "\n");
 		System.out.println("\nCost + Tax: " + (checkout.totalCost() + checkout.totalTax()) + "\n");
-		checkout.printReceipt();
+		System.out.println(checkout);
 	}
 }

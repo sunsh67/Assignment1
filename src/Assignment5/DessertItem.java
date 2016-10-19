@@ -14,8 +14,8 @@ public abstract class DessertItem {
 	public abstract int getCost();
 	public String toString(){
 		String name=this.getName();
-		if(name.length()>DessertShoppe.MAX_ITEM_NAME_SIZE)
-			name=name.substring(0, DessertShoppe.MAX_ITEM_NAME_SIZE)+"\n"+name.substring(DessertShoppe.MAX_ITEM_NAME_SIZE,name.length()-1);
-		return name;
+		String s="";
+		for(int i=1;i<DessertShoppe.MAX_ITEM_NAME_SIZE-name.length();i++) s+=" ";
+		return name+s;
 	};
 }

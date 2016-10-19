@@ -19,7 +19,9 @@ public class Sundae extends IceCream {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		String name=super.toString()+"  \n with "+this.topping;
-		return name+"    ";
+		String name=this.name+" with\n"+this.topping;
+		String s="";
+		for(int i=1;i<DessertShoppe.MAX_ITEM_NAME_SIZE-this.topping.length();i++) s+=" ";
+		return name+s;
 	}
 }

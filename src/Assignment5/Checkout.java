@@ -40,12 +40,23 @@ public class Checkout {
 		return (int) (this.totalCost() * DessertShoppe.TAXRATE);
 	}
 
-	public void printReceipt() {
+	/*public void printReceipt() {
 		f.format("      %s\n", DessertShoppe.STORE);
 		f.format("--------------------------------\n");
 		for (DessertItem des : list)
 			f.format("%-20s %1s %5.2f\n", des,"\t",DessertShoppe.cents2dollarsAndCents(des.getCost()));
 	   f.format("%-20s %1s %5.2f\n", "Tax ","\t",DessertShoppe.cents2dollarsAndCents(this.totalTax()));
 	   f.format("%-20s %1s %5.2f\n", "Total Cost ","\t",DessertShoppe.cents2dollarsAndCents(this.totalCost()+this.totalTax()));
-}
+}*/
+	public String toString(){
+		String receipt="";
+		receipt+="      "+DessertShoppe.STORE+"\n"+"--------------------------------\n";
+		for(DessertItem des:list){
+			receipt+=des.toString()+DessertShoppe.cents2dollarsAndCents(des.getCost())+"\n";
+		}
+		receipt+="Tax                     "+DessertShoppe.cents2dollarsAndCents(this.totalTax())+"\n";
+		receipt+="Total Cost             "+DessertShoppe.cents2dollarsAndCents(this.totalCost()+this.totalTax());
+		
+        return receipt;
+	}
 }
