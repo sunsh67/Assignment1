@@ -16,7 +16,7 @@ public class AnimalHospital {
 		Pet p2 = new Dog("Zoey", "Tracy", "yellow", "large");
 		p1.setSex(Pet.NEUTERED);
 		p2.setSex(Pet.MALE);
-		((Cat) p1).setBoardStart(3, 14, 2001);
+		((Cat) p1).setBoardStart(3, 13, 2001);
 		((Cat) p1).setBoardEnd(3, 15, 2001);
 		((Dog) p2).setBoardStart(3, 14, 2001);
 		((Dog) p2).setBoardEnd(3, 25, 2001);
@@ -45,16 +45,21 @@ public class AnimalHospital {
 
 	protected void printPetsBoarding(int month, int day, int year) {
 
+		List<Pet> temp = new ArrayList<>();
 		for (Pet p : pets) {
 			if (p.getClass().toString().endsWith("Cat")) {
 				if (((Cat) p).boarding(month, day, year)) {
+					temp.add(p);
+					System.out.println(p.toString());
+				}
+			} else if (p.getClass().toString().endsWith("Dog")) {
+				if (((Dog) p).boarding(month, day, year)) {
+					temp.add(p);
 					System.out.println(p.toString());
 				}
 			}
-			if (p.getClass().toString().endsWith("Dog")) {
-				if (((Dog) p).boarding(month, day, year)) {
-					System.out.println(p.toString());
-				}
+			if (temp.size() == 0) {
+				System.out.println("No pet is boarding in that date");
 			}
 		}
 	}
