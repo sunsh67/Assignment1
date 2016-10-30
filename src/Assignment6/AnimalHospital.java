@@ -58,9 +58,6 @@ public class AnimalHospital {
 					System.out.println(p.toString());
 				}
 			}
-			if (temp.size() == 0) {
-				System.out.println("No pet is boarding in that date");
-			}
 		}
 	}
 }
