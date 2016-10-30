@@ -8,7 +8,7 @@ public class Solution {
 		// TODO Auto-generated method stub
 		Solution s = new Solution();
 		s.longestPalindrome("aBebaAabEba");
-		s.titleToNumber("AA");
+		s.titleToNumber("AB");
 		int[] nums = { 2, 7, 11, 15 };
 		s.twoSum(nums, 10);
 
@@ -65,10 +65,11 @@ public class Solution {
 			System.out.println("Invalid input");
 		}
 		int result = 0;
-		for (int i = 0, t = 0; i < title.length(); i++, t++) {
+		for (int i =title.length()-1, t = 0; i >=0; i--, t++) {
 			char ch = title.charAt(i);
 			result = result + (int) Math.pow(26, t) * (ch - 'A' + 1);
 		}
+		System.out.println(result);
 		return result;
 	}
 

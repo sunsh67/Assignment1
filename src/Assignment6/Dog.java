@@ -37,8 +37,13 @@ public class Dog extends Pet implements Boardable{
 	@Override
 	public boolean boarding(int month, int day, int year) {
 		// TODO Auto-generated method stub
-		Date boarding=new Date(month,day,year);
-		 return (boarding.early(start) && boarding.late(end));
+		Date boarding = new Date(month, day, year);
+		if(boarding.year>=start.year&&boarding.month>=start.month&&boarding.day>=start.day){
+			if(boarding.year<=end.year&&boarding.month<=end.month&&boarding.day<=start.day){
+				return true;
+			}
+		}
+		return false;
 	}
 
 }
