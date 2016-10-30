@@ -39,10 +39,11 @@ public class Dog extends Pet implements Boardable{
 		// TODO Auto-generated method stub
 		Date boarding = new Date(month, day, year);
 		if(boarding.year>=start.year&&boarding.month>=start.month&&boarding.day>=start.day){
-			if(boarding.year<=end.year&&boarding.month<=end.month&&boarding.day<=start.day){
+			if(boarding.year<=end.year&&boarding.month<=end.month&&boarding.day<=end.day){
 				return true;
 			}
 		}
+		//System.out.println("This pet is not bearding at "+month+"/"+day+"/"+year);
 		return false;
 	}
 
