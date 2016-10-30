@@ -1,6 +1,5 @@
 package Assignment6;
 
-
 public class Pet {
 	private String name;
 	private String ownerName;
@@ -53,11 +52,11 @@ public class Pet {
 
 	@Override
 	public String toString() {
-		String name=this.getName();
-		String owner=this.getOwnerName();
-		String color=this.getColor();
-		String sex=this.getSex();
-		return name+" owned by "+owner+"\nColor: "+color+"\nSex: "+sex+"\n";
+		String name = this.getName();
+		String owner = this.getOwnerName();
+		String color = this.getColor();
+		String sex = this.getSex();
+		return name + " owned by " + owner + "\nColor: " + color + "\nSex: " + sex + "\n";
 	}
 
 }
