@@ -45,16 +45,14 @@ public class AnimalHospital {
 
 	protected void printPetsBoarding(int month, int day, int year) {
 
-		List<Pet> temp = new ArrayList<>();
+	
 		for (Pet p : pets) {
 			if (p.getClass().toString().endsWith("Cat")) {
 				if (((Cat) p).boarding(month, day, year)) {
-					temp.add(p);
 					System.out.println(p.toString());
 				}
 			} else if (p.getClass().toString().endsWith("Dog")) {
 				if (((Dog) p).boarding(month, day, year)) {
-					temp.add(p);
 					System.out.println(p.toString());
 				}
 			}

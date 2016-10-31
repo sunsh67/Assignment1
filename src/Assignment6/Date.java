@@ -2,9 +2,9 @@ package Assignment6;
 
 public class Date {
 
-	int month;
-	int day;
-	int year;
+	protected int month;
+	protected int day;
+	protected int year;
 
 	public Date(int month, int day, int year) {
 		if (this.isDateEligible(month, day, year)) {
